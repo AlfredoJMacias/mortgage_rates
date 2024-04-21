@@ -48,7 +48,7 @@ class MortgageRatesTracker:
             print("Current rates are above the historical average. Caution advised.")
 
 if __name__ == "__main__":
-    tracker = MortgageRatesTracker("https://api.example.com/mortgage_rates")
+    tracker = MortgageRatesTracker("API")
     rates_data = tracker.fetch_rates()
 
     if rates_data and tracker.validate_data(rates_data):
